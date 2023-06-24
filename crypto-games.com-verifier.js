@@ -1,8 +1,10 @@
 /**
  * crypto.games (formerly crypto-games.com) verifier
  *
+ * @bookmarklet javascript:(async()=>await fetch('https://raw.githubusercontent.com/rainbot-ch/crypto-games.com-verifier/main/crypto-games.com-verifier.js').then((response)=>response.text()).then((data)=>eval(data)))()
  * @version 1.0.0
  * @author rainbot.ch
+ * @telegram rain3t
  * @copyright rainbot.ch 2023
  * @license opensource
  * @require https://github.com/emn178/js-sha512/blob/master/src/sha512.js @copyright Chen, Yi-Cyuan 2014-2018
