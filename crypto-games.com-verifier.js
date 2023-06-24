@@ -1,4 +1,6 @@
 /**
+ * @CryptoGamesVerifier
+ *
  * crypto.games (formerly crypto-games.com) verifier
  *
  * @bookmarklet javascript:(async()=>await fetch('https://raw.githubusercontent.com/rainbot-ch/crypto-games.com-verifier/main/crypto-games.com-verifier.js').then((response)=>response.text()).then((data)=>eval(data)))()
