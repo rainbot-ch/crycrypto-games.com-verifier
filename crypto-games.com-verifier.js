@@ -57,7 +57,7 @@ function check(selector){
 }
 function appendTable(hex,decimal,result,matching){
     if(document.querySelector('iframe.fancybox-iframe').contentDocument.querySelector('body>form #ContentPlaceHolder1_pnlDiceId .table.table-striped>tbody').childElementCount==2){
-        document.querySelector('iframe.fancybox-iframe').contentDocument.querySelector('body>form #ContentPlaceHolder1_pnlDiceId .table.table-striped>tbody :first-child').insertCell(-1).textContent='Matching:';
+        document.querySelector('iframe.fancybox-iframe').contentDocument.querySelector('body>form #ContentPlaceHolder1_pnlDiceId .table.table-striped>tbody:first-child').insertCell(-1).textContent='Matching:';
         let body=document.querySelector('iframe.fancybox-iframe').contentDocument.querySelector('body>form #ContentPlaceHolder1_pnlDiceId .table.table-striped>tbody');
         let row=body.insertRow(-1);
         let step=row.insertCell(-1);
@@ -66,7 +66,7 @@ function appendTable(hex,decimal,result,matching){
         let Digits=row.insertCell(-1);
         let Result=row.insertCell(-1);
         let verified=row.insertCell(-1);
-        let symbol=matching?' ✓' :' ✗';
+        let symbol=matching?' ✓':' ✗';
         step.textContent='verifier';
         step.style.color='rgb(0,255,255)';
         Hex.textContent=hex+symbol;
@@ -78,8 +78,8 @@ function appendTable(hex,decimal,result,matching){
         Result.textContent=result+symbol;
         Result.style.color='rgb(0,255,255)';
         verified.textContent=matching+symbol;
-        verified.style.color=matching?'rgb(22,255,2)' :'rgb(176,0,23)';
-        row.style.backgroundColor=matching?'rgb(30,60,60,1)' :'rgb(255,99,71,1)';
+        verified.style.color=matching?'rgb(22,255,2)':'rgb(176,0,23)';
+        row.style.backgroundColor=matching?'rgb(24,84,69)':'rgb(255,99,71,1)';
         body.appendChild(row);
         let table=document.querySelector('iframe.fancybox-iframe').contentDocument.querySelector('body>form #ContentPlaceHolder1_pnlDiceId .table.table-striped');
         let ctable=document.createElement('table');
