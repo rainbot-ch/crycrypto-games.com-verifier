@@ -57,7 +57,7 @@ function check(selector){
 }
 function appendTable(hex,decimal,result,matching){
     if(document.querySelector('iframe.fancybox-iframe').contentDocument.querySelector('body>form #ContentPlaceHolder1_pnlDiceId .table.table-striped>tbody').childElementCount==2){
-        document.querySelector('iframe.fancybox-iframe').contentDocument.querySelector('body>form #ContentPlaceHolder1_pnlDiceId .table.table-striped>tbody:first-child').insertCell(-1).textContent='Matching:';
+        document.querySelector('iframe.fancybox-iframe').contentDocument.querySelector('body>form #ContentPlaceHolder1_pnlDiceId .table.table-striped>tbody :first-child').insertCell(-1).textContent='Matching:';
         let body=document.querySelector('iframe.fancybox-iframe').contentDocument.querySelector('body>form #ContentPlaceHolder1_pnlDiceId .table.table-striped>tbody');
         let row=body.insertRow(-1);
         let step=row.insertCell(-1);
